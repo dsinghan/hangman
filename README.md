@@ -18,9 +18,9 @@ Hangman game written in Python.
 hangman/
 ├── src/
 │   ├── __main__.py
-│   ├── game.py # Game logic
-│   ├── utils.py # Utility functions
-│   └── words.txt # Word list
+│   ├── game.py         # Game logic
+│   ├── utils.py        # Utility functions
+│   └── words.txt       # Word list
 └── tests/
     ├── test_game.py
     └── test_utils.py
