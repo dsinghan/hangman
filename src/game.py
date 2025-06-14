@@ -30,7 +30,7 @@ class Hangman:
         while True:
             guess = input("Guess a letter: ").lower()
             if len(guess) != 1 or not guess.isalpha():
-                print("Enter a single letter.")
+                print("Enter a valid single letter (a-z).")
                 continue
             if guess in self.guessed_letters:
                 print("Letter already guessed.")
