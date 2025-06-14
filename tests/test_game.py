@@ -49,7 +49,7 @@ class TestHangman(unittest.TestCase):
     def test_get_guess_wrong(self, mock_input):
         tries_before = self.game.tries
         result = self.game.get_guess()
-        self.assertEqual(result, f"Wrong! Tries left: {self.game.get_tries_left()}")
+        self.assertEqual(result, f"Wrong! {self.game.get_tries_left()} tries left.")
         self.assertEqual(self.game.tries, tries_before + 1)
 
     # Test repeated guesses
