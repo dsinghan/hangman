@@ -38,6 +38,19 @@ class Hangman:
 
     def play(self):
         print("Welcome to Hangman!")
+        while True:
+            try:
+                numPlayers = int(input("Enter number of players (1 or 2): "))
+                if not 1 <= numPlayers <= 2:
+                    raise ValueError
+                break
+            except ValueError:
+                print("Invalid input. Please enter numbers 1 or 2.")
+                continue
+        if numPlayers == 2:
+            self.word = input("Player 1, enter the word to guess: ").lower()
+            print("\n" * 50)
+            print("Player 2, it's your turn to guess!")
         while self.get_tries_left() > 0:
             print(get_hangman(self.tries))
             print(self.get_word())

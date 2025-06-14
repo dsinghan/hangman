@@ -1,9 +1,9 @@
 import random
 
-WORDS = ["tornado"]
-
 def choose_word():
-    return random.choice(WORDS)
+    with open("src/words.txt", "r") as file:
+        words = file.read().splitlines()
+    return random.choice(words).lower()
 
 PHASES = [
     """
