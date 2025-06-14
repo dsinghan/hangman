@@ -26,14 +26,14 @@ hangman/
     └── test_utils.py
 ```
 
-### Running the Game
+## Running the Game
 
 From the project root, run:
 ```sh
 python3 -m src
 ```
 
-### Running Tests
+## Running Tests
 
 From the project root, run:
 ```sh
